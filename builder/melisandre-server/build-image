@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -e
+
+shellPath=`dirname $0`
+cd $shellPath
+
+docker build -t nswebfrog/melisandre-server-builder .
